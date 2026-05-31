@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stage FSL — Conclusioni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Source+Sans+3:ital,opsz,wght@0,9..46,300;0,9..46,400;0,9..46,500;1,9..46,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="ico-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"/><path d="M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9"/></symbol>
+  <symbol id="ico-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M9 3v18M3 9h6M3 15h6"/><rect x="12" y="10" width="6" height="11"/></symbol>
+  <symbol id="ico-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="2" y1="12" x2="22" y2="12"/></symbol>
+  <symbol id="ico-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="ico-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
+  <symbol id="ico-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></symbol>
+  <symbol id="ico-chip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M9 7V4M12 7V4M15 7V4M9 20v-3M12 20v-3M15 20v-3M4 9h3M4 12h3M4 15h3M17 9h3M17 12h3M17 15h3"/></symbol>
+  <symbol id="ico-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+  <symbol id="ico-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></symbol>
+  <symbol id="ico-wind" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2m15.73-8.27A2.5 2.5 0 1119.5 12H2"/></symbol>
+  <symbol id="ico-flame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0011 17c0 1.38-1.12 2.5-2.5 2.5A4.5 4.5 0 014 15c0-2.5 1.5-4.5 3-6 .5 1.5 2 2.5 2 4zm5.5-8c0 1.5-1 3-2.5 4C9.5 9 8.5 7.5 8.5 6c0-2 1.5-4 3.5-4s3.5 2 2 4zm1.5 8c0 1.38 1.12 2.5 2.5 2.5A4.5 4.5 0 0022 15c0-2.5-1.5-4.5-3-6-.5 1.5-2 2.5-2 4z"/></symbol>
+  <symbol id="ico-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0018 8 6 6 0 006 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 018.91 14"/></symbol>
+  <symbol id="ico-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></symbol>
+  <symbol id="ico-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></symbol>
+  <symbol id="ico-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="ico-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></symbol>
+  <symbol id="ico-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></symbol>
+  <symbol id="ico-person" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="ico-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+  <symbol id="ico-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+  <symbol id="ico-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></symbol>
+</svg>
+<div class="fab-wrapper" id="fabWrapper">
+  <button class="fab" id="fabBtn" aria-label="Menu principale">
+    <span class="fab-bar"></span><span class="fab-bar"></span><span class="fab-bar"></span>
+  </button>
+</div>
+<nav class="main-menu" id="mainMenu">
+  <div class="main-menu-header"><span>Stage</span><button class="close-menu" id="closeMenuBtn">✕</button></div>
+  <ul>
+    <li><a href="index.html"><svg width="18" height="18"><use href="#ico-home"/></svg> Home</a></li>
+    <li><a href="azienda.html"><svg width="18" height="18"><use href="#ico-building"/></svg> Presentazione Azienda</a></li>
+    <li><a href="attivita.html"><svg width="18" height="18"><use href="#ico-briefcase"/></svg> Attività Lavorativa</a></li>
+    <li><a href="competenze.html"><svg width="18" height="18"><use href="#ico-target"/></svg> Competenze</a></li>
+    <li><a href="conclusioni.html" class="active"><svg width="18" height="18"><use href="#ico-doc"/></svg> Conclusioni</a></li>
+  </ul>
+</nav>
+<div class="overlay" id="overlay"></div>
+  <header class="top-navbar">
+    <span class="top-navbar-title">Conclusioni</span>
+    <nav class="top-navbar-links">
+      <a href="#conc-riflessioni">Riflessioni</a>
+      <a href="#conc-futuro">Futuro</a>
+    </nav>
+  </header>
+  <main class="page-main">
+    <div class="page-hero">
+      <p class="page-label">Fine del percorso</p>
+      <h1>Conclusioni <em>Personali</em></h1>
+    </div>
+
+    <section class="content-section" id="conc-riflessioni">
+      <h2>Le mie Riflessioni</h2>
+      <div class="card quote-card">
+        <span class="quote-mark">"</span>
+        <p>L'esperienza di stage presso Reparalotodo è stata molto formativa, in quanto mi ha permesso di entrare in contatto con il mondo del lavoro per la prima volta e di comprendere il funzionamento reale di un'azienda del settore informatico.</p>
+        <p style="margin-top:14px">Ho acquisito nuove competenze tecniche e migliorato la mia capacità di lavorare sia in autonomia che in gruppo. Inizialmente ho riscontrato alcune difficoltà legate all'ambiente straniero e alla lingua, ma sono riuscito a superarle grazie al supporto dei tecnici e all'esperienza pratica quotidiana.</p>
+        <p style="margin-top:14px">Ho compreso l'importanza del rispetto degli orari e della comunicazione in ambito lavorativo. Ritengo questa esperienza molto utile per il mio futuro percorso di studi e lavorativo.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="conc-futuro">
+      <h2>Guardando al Futuro</h2>
+      <div class="card" style="display:flex; flex-direction:column; gap:16px;">
+        <div style="display:flex; gap:16px; align-items:flex-start;">
+          <span style="color:var(--accent); flex-shrink:0; margin-top:2px;"><svg width="28" height="28"><use href="#ico-code"/></svg></span>
+          <p>Mi piacerebbe fare un'altra esperienza, ma in un contesto diverso. Il lavoro su hardware mi è piaciuto, però sento che quello che mi interessa davvero è la programmazione. Lavorare su software, scrivere codice che fa qualcosa di concreto, costruire cose che funzionano.</p>
+        </div>
+        <div style="display:flex; gap:16px; align-items:flex-start;">
+          <span style="color:var(--accent); flex-shrink:0; margin-top:2px;"><svg width="28" height="28"><use href="#ico-server"/></svg></span>
+          <p>In alternativa, e in parallelo, mi attira la gestione delle reti: configurare server, lavorare su infrastrutture, capire come funzionano i sistemi che fanno girare le cose dietro le quinte. Non ho ancora le idee chiarissime su dove voglio arrivare. So che questo mese mi ha confermato quanto mi piaccia capire come funzionano le cose. Il passo successivo è trovare il posto giusto per andare più in profondità.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Haseeb Saif · 4BIA · Anno scolastico 2025/2026</p>
+      <p>Approfondimento Tecnico Stage FSL · Reparalotodo, Santiago de Compostela</p>
+    </footer>
+  </main>
+  <script src="nav.js"></script>
+</body>
+</html>
